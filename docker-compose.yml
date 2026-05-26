@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  whiskey-distiller:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: whiskey-distiller
+    ports:
+      - "5000:5000"
+    volumes:
+      # Mount the parent folder (the codebase directory) as read-only at /workspace
+      - ../:/workspace:ro
+      # Persist the downloaded ONNX model so it doesn't download on every restart
+      - ./model:/app/model
+    environment:
+      - WORKSPACE_PATH=/workspace
+    restart: unless-stopped

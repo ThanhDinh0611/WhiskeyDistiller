@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="WhiskeyDistiller.Api/WhiskeyDistiller.Api.csproj" />
+  <Project Path="WhiskeyDistiller.Core/WhiskeyDistiller.Core.csproj" />
+  <Project Path="WhiskeyDistiller.Mcp/WhiskeyDistiller.Mcp.csproj" />
+</Solution>

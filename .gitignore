@@ -1,0 +1,47 @@
+# ─── .NET / C# ──────────────────────────────────────────
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+artifacts/
+*.lscache
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.DotSettings
+*.DotSettings.user
+_ReSharper*/
+*.resharper
+
+# ─── Model & Local Cache ──────────────────────────────
+# Ignore downloaded ONNX models and vocabulary files
+model/
+*.onnx
+vocab.txt
+
+# ─── Environment & Secrets ─────────────────────────────
+.env
+.env.*.local
+.env.local
+secrets.json
+
+# ─── OS & IDE ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vs/
+.vscode/
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.idea/
+.fleet/
+
+# ─── Testing & Misc ────────────────────────────────────
+coverage/
+TestResults/
+*.bak
+*.orig
+*.log
